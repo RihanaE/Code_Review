@@ -9,6 +9,7 @@ const { check, validationResult } = require('express-validator');
 // const { exec } = require('child_process');
 const nodemailer = require("nodemailer");
 
+
 router.post("/send-otp", async (req, res) => {
   try {
     const { email, password } = req.body;
